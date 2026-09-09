@@ -1,0 +1,49 @@
+
+POPULATION
+----------
+All *decisive* matches of the FIFA World Cup 2026 -- i.e. every knockout
+match (which always has a winner) plus every group-stage match that did
+NOT end in a draw. "Winner possession" and "loser possession" are
+undefined for a drawn group match, so those are excluded from the
+population for this question.
+    Total matches played at the tournament : 104
+    Approx. size of the decisive population : ~90
+      (72 group matches, most but not all decisive, + 32 knockout matches,
+      all decisive by definition)
+
+SAMPLE
+------
+    Sample size (n)      : 15
+    Sampling technique   : Purposive (judgement) sampling, NOT simple
+                            random sampling.
+    Why not SRS          : Ball-possession-by-match is not centrally
+                            published for all ~90 decisive matches in one
+                            place (unlike goals or results). Each figure
+                            in this sample had to be individually verified
+                            against an official match-centre provider
+                            (Sky Sports/Opta, TNT Sports/Eurosport) or a
+                            wire-service recap. A true SRS would require a
+                            complete, verifiable possession figure for
+                            every match in the population, which was not
+                            available.
+    How matches were chosen : Deliberately spread across every stage of
+                            the draw (group stage, Round of 32, Round of
+                            16, quarter-final, semi-final, 3rd-place
+                            play-off, Final) and deliberately including
+                            BOTH comfortable possession-dominant wins
+                            (e.g. Spain 67.9% vs Belgium) AND shock,
+                            low-possession wins (e.g. Paraguay won on
+                            penalties with only 24.4% possession), so the
+                            sample is not cherry-picked to only support
+                            the hypothesis.
+    Unit of analysis     : one MATCH (not one team). winner_poss and
+                            loser_poss come from the same match and sum to
+                            100%, so they are not independent -- this is
+                            why the inferential tests later treat "diff"
+                            as a single paired sample per match.
+
+VARIABLES CARRIED FORWARD
+--------------------------
+    winner_poss  : winning team's share of possession (%)
+    loser_poss   : losing team's share of possession (%)
+    diff         : winner_poss - loser_poss (percentage points)

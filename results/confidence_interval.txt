@@ -1,0 +1,19 @@
+
+95% CONFIDENCE INTERVAL FOR THE MEAN POSSESSION DIFFERENCE
+(winner_poss - loser_poss), FIFA World Cup 2026 sample (n=15)
+
+Sample mean difference       : 10.93 percentage points
+Sample std dev of difference : 25.69 percentage points
+Standard error                : 6.63
+Degrees of freedom (n-1)      : 14
+t critical value (95%, two-tailed) : 2.145
+
+95% CI for the population mean difference : [-3.29, 25.16] pp
+
+Interpretation: we are 95% confident that, across the population of
+decisive FIFA World Cup 2026 matches, the winning team's average
+possession share exceeds the losing team's by somewhere between
+-3.29 and 25.16 percentage points. Because this interval
+does contain 0, the data
+are consistent with there
+being no true difference on average.

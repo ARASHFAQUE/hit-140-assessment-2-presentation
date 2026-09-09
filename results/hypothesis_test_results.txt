@@ -1,0 +1,38 @@
+
+ONE-SAMPLE t-TEST ON PAIRED POSSESSION DIFFERENCES (n=15 matches)
+
+H0: mu_diff = 0      H1: mu_diff > 0      alpha = 0.05
+
+CORRECT APPROACH -- one-sample t-test on diff = winner_poss - loser_poss
+(equivalent to a paired-samples t-test):
+    t statistic                         : 1.648
+    degrees of freedom                  : 14
+    p-value (two-tailed)                : 0.1847
+    p-value (one-tailed, H1: mean>0)    : 0.0924
+    Decision at alpha = 0.05                : FAIL TO REJECT H0
+
+
+FOR COMPARISON ONLY -- (incorrect) independent two-sample t-test,
+treating winner_poss and loser_poss as if they were two unrelated
+groups of teams:
+    t statistic                         : 2.331
+    p-value (two-tailed)                : 0.0462
+    p-value (one-tailed, H1: mean>0)    : 0.0231
+    Decision at alpha = 0.05                : REJECT H0
+
+Correlation between winner_poss and loser_poss in this sample: r = -1.000
+
+WHY THEY DIFFER
+
+Because winner_poss + loser_poss = 100 in every match, the two columns
+are perfectly negatively correlated (r = -1), not independent. The
+independent-samples formula estimates the standard error of the
+difference as sqrt(Var(winner)/n + Var(loser)/n), which completely
+ignores that negative correlation. The true variance of the paired
+difference is Var(winner) + Var(loser) + 2*|Cov| -- roughly double what
+the independent formula assumes here. The independent test therefore
+UNDERSTATES the true standard error, producing an artificially larger
+|t| and a smaller ("more significant") p-value than is actually
+justified. This is exactly why match-level possession data must be
+analysed with a one-sample test on the PAIRED differences, not an
+independent two-sample test.

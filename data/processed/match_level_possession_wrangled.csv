@@ -1,0 +1,16 @@
+match_id,round,score_display,winner,loser,winner_poss,loser_poss,decided_by
+M01,Group stage,Argentina 3-0 Algeria,Argentina,Algeria,47.8,52.2,Regulation
+M02,Round of 32,Spain 3-0 Austria,Spain,Austria,65.0,35.0,Regulation
+M03,Round of 32,Paraguay 1-1 Germany,Paraguay,Germany,24.4,75.6,Penalties
+M04,Round of 16,Morocco 3-0 Canada,Morocco,Canada,56.0,44.0,Regulation
+M05,Round of 16,Norway 2-1 Brazil,Norway,Brazil,65.0,35.0,Regulation
+M06,Round of 16,Argentina 3-2 Egypt,Argentina,Egypt,64.0,36.0,Regulation
+M07,Quarter-final,Spain 2-1 Belgium,Spain,Belgium,67.9,32.1,Regulation
+M08,Semi-final,Spain 2-0 France,Spain,France,49.0,51.0,Regulation
+M09,Semi-final,Argentina 2-1 England,Argentina,England,64.2,35.8,Regulation
+M10,Third-place playoff,England 6-4 France,England,France,54.1,45.9,Regulation
+M11,Final,Spain 1-0 Argentina,Spain,Argentina,60.0,40.0,Extra time
+M12,Round of 16,England 3-2 Mexico,England,Mexico,33.1,66.9,Regulation
+M13,Quarter-final,Argentina 3-1 Switzerland,Argentina,Switzerland,59.0,41.0,Extra time
+M14,Quarter-final,England 2-1 Norway,England,Norway,52.4,47.6,Extra time
+M15,Round of 32,Morocco 1-1 Netherlands,Morocco,Netherlands,70.1,29.9,Penalties
