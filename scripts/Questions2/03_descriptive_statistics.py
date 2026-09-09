@@ -16,7 +16,7 @@ Saves the results table to results/descriptive_statistics.csv
 import statistics as stats_lib
 import numpy as np
 import pandas as pd
-from Questions1._paths import ANALYSIS_SAMPLE_CSV, DESCRIPTIVE_STATS_CSV
+from Questions2._paths import ANALYSIS_SAMPLE_CSV, DESCRIPTIVE_STATS_CSV
 
 print("=" * 78)
 print("STEP 3: DESCRIPTIVE STATISTICS")

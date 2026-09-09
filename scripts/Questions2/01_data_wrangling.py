@@ -21,7 +21,7 @@ Run this first -- every later script depends on its output.
 """
 
 import pandas as pd
-from Questions1._paths import RAW_TEAM_MATCH_CSV, WRANGLED_MATCH_CSV
+from Questions2._paths import RAW_TEAM_MATCH_CSV, WRANGLED_MATCH_CSV
 
 print("=" * 78)
 print("STEP 1: DATA WRANGLING")

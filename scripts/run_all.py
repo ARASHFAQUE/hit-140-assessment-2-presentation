@@ -21,7 +21,7 @@ STEPS = [
     "06_visualization.py",
 ]
 
-SCRIPTS_DIR = Path(__file__).resolve().parent / "Questions1"
+SCRIPTS_DIR = Path(__file__).resolve().parent / "Questions2"
 
 for step in STEPS:
     print("\n" + "#" * 78)

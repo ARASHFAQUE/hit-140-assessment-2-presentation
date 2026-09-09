@@ -27,7 +27,7 @@ import pandas as pd
 from scipy import stats
 import matplotlib.pyplot as plt
 import seaborn as sns
-from Questions1._paths import ANALYSIS_SAMPLE_CSV, FIGURE_PNG
+from Questions2._paths import ANALYSIS_SAMPLE_CSV, FIGURE_PNG
 
 print("=" * 78)
 print("STEP 6: VISUALISATION")

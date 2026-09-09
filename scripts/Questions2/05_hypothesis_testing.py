@@ -25,7 +25,7 @@ Saves the full report to results/hypothesis_test_results.txt
 import numpy as np
 import pandas as pd
 import math
-from Questions1._paths import ANALYSIS_SAMPLE_CSV, HYPOTHESIS_TEST_TXT
+from Questions2._paths import ANALYSIS_SAMPLE_CSV, HYPOTHESIS_TEST_TXT
 
 
 def _betacf(x, a, b):

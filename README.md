@@ -16,7 +16,7 @@ wc2026_possession_project/
 │       ├── match_level_possession_wrangled.csv <- output of step 1 (one row per MATCH)
 │       └── analysis_sample.csv                 <- output of step 2 (final analysis-ready table)
 ├── scripts/
-│   ├── Questions1/
+│   ├── Questions2/
 │   │   ├── _paths.py                   <- shared folder locations (imported by every script)
 │   │   ├── 01_data_wrangling.py        <- SKILL: data wrangling
 │   │   ├── 02_data_preparation_sampling.py <- SKILL: data preparation and sampling
@@ -24,7 +24,7 @@ wc2026_possession_project/
 │   │   ├── 04_confidence_interval.py   <- SKILL: inferential stats (confidence interval)
 │   │   ├── 05_hypothesis_testing.py    <- SKILL: inferential stats (one-sample t-test)
 │   │   └── 06_visualization.py         <- charts
-│   └── run_all.py                      <- runs every script in Questions1/ in order
+│   └── run_all.py                      <- runs every script in Questions2/ in order
 └── results/
     ├── sampling_summary.txt
     ├── descriptive_statistics.csv
@@ -55,9 +55,9 @@ Step 6 both displays the chart in an interactive window (`plt.show()`)
 and saves it to `results/figures/possession_diff_plot.png` — so you'll
 see it pop up when you run the script, and it's still on disk afterwards.
 
-```bash
+```powershell
 cd scripts
-python run_all.py
+python .\run_all.py
 ```
 
 If the virtual environment is not activated, run the pipeline with its
@@ -72,18 +72,14 @@ This regenerates everything in `data/processed/` and `results/` from the
 raw CSV. You can also run the six numbered scripts one at a time, in
 order — each one only depends on files produced by the previous step:
 
-```bash
+```powershell
 cd scripts
-python Questions2/01_data_wrangling.py
-python Questions2/02_data_preparation_sampling.py
-python Questions2/03_descriptive_statistics.py
-python Questions2/04_confidence_interval.py
-python Questions2/05_hypothesis_testing.py
-python Questions2/06_visualization.py
-
-for all:
-python Questions2/run_all.py
-
+python .\Questions2\01_data_wrangling.py
+python .\Questions2\02_data_preparation_sampling.py
+python .\Questions2\03_descriptive_statistics.py
+python .\Questions2\04_confidence_interval.py
+python .\Questions2\05_hypothesis_testing.py
+python .\Questions2\06_visualization.py
 
 ```
 

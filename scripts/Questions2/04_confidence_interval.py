@@ -14,7 +14,7 @@ Saves the result to results/confidence_interval.txt
 import numpy as np
 import pandas as pd
 from scipy import stats
-from Questions1._paths import ANALYSIS_SAMPLE_CSV, CONFIDENCE_INTERVAL_TXT
+from Questions2._paths import ANALYSIS_SAMPLE_CSV, CONFIDENCE_INTERVAL_TXT
 
 print("=" * 78)
 print("STEP 4: 95% CONFIDENCE INTERVAL FOR THE MEAN POSSESSION DIFFERENCE")

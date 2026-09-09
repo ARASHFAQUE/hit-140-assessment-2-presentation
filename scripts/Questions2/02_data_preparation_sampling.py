@@ -19,7 +19,7 @@ Run this after 01_data_wrangling.py.
 
 import numpy as np
 import pandas as pd
-from Questions1._paths import WRANGLED_MATCH_CSV, ANALYSIS_SAMPLE_CSV, SAMPLING_SUMMARY_TXT
+from Questions2._paths import WRANGLED_MATCH_CSV, ANALYSIS_SAMPLE_CSV, SAMPLING_SUMMARY_TXT
 
 print("=" * 78)
 print("STEP 2: DATA PREPARATION AND SAMPLING")
