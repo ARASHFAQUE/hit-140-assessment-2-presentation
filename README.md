@@ -74,12 +74,17 @@ order — each one only depends on files produced by the previous step:
 
 ```bash
 cd scripts
-python Questions1/01_data_wrangling.py
-python Questions1/02_data_preparation_sampling.py
-python Questions1/03_descriptive_statistics.py
-python Questions1/04_confidence_interval.py
-python Questions1/05_hypothesis_testing.py
-python Questions1/06_visualization.py
+python Questions2/01_data_wrangling.py
+python Questions2/02_data_preparation_sampling.py
+python Questions2/03_descriptive_statistics.py
+python Questions2/04_confidence_interval.py
+python Questions2/05_hypothesis_testing.py
+python Questions2/06_visualization.py
+
+for all:
+python Questions2/run_all.py
+
+
 ```
 
 ## Data provenance
